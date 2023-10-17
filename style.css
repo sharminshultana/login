@@ -1,0 +1,78 @@
+body{
+    background: radial-gradient(circle at 50%, #bbe1fa 30%, #3282b8 55%, #000000 100%);
+  
+}
+.container{
+height: 280px;
+width: 280px;
+background: radial-gradient(circle at 50%,#bbe1fa 32%,#3282b8 62%, #000000 71%);
+opacity: 0.7;
+text-align: center;
+top: 50%;
+left: 50%;
+border-radius: 50%;
+position: absolute;
+box-shadow: 0 10px 30px white, 0 0 20px white, 0 0 20px white;
+transform: translate(-50%,-100%);
+animation: anim 2s forwards;
+transition: all 2s;
+/* transform: translate(-50%,-100%) scale(0.5,0.5) perspective(700px) rotateX(80deg) translateZ(-100px); */
+}
+@keyframes anim{
+    100%{
+        transform: translate(-50%,-50%) scale(1,1) rotateX(0deg);
+    }
+}
+ .inner-container{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    width: 100%;
+}
+.login-title{
+    font-size: 2.5em;
+    text-transform: uppercase;
+    color: #000000;
+
+}
+input{
+    line-height: center;
+    margin: 0.3em 0;
+    padding: 0.5em;
+    width: calc(400px-40px);
+    border:1px solid #424874;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+}
+::placeholder{
+    color: grey;
+    letter-spacing: 0.2em;
+}
+button{
+    line-height: center;
+    letter-spacing: 1em;
+    margin: 0.5em 0;
+    padding: 0.5em;
+    width:calc(400px-40px);
+    border-radius: 25px;
+    border: 1 px solid #424874;
+    color: white;
+    font-size: 1em;
+    text-transform: uppercase;
+    background: #363662;
+    cursor: pointer;
+
+}
+button:hover{
+    background: #465881;
+    border: 1px solid white;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: azure;
+}
